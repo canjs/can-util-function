@@ -1,0 +1,26 @@
+{
+  "name": "can-util-function",
+  "version": "0.0.1",
+  "homepage": "https://github.com/canjs/can-util-function",
+  "authors": [
+    "Bitovi"
+  ],
+  "description": "can/util/function plugin for canjs",
+  "main": "dist/steal/function.js",
+  "keywords": [
+    "can",
+    "canjs",
+    "can-plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  }
+}

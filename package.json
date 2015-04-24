@@ -1,0 +1,29 @@
+{
+  "name": "can-util-function",
+  "version": "0.0.1",
+  "description": "can/util/function plugin for canjs",
+  "main": "dist/steal/function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canjs/can-util-function.git"
+  },
+  "keywords": [
+    "can",
+    "canjs",
+    "can-plugin"
+  ],
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canjs/can-util-function/issues"
+  },
+  "homepage": "https://github.com/canjs/can-util-function#readme",
+  "devDependencies": {
+    "steal": "^0.9.3",
+    "steal-qunit": "0.0.4",
+    "steal-tools": "^0.9.4"
+  }
+}
