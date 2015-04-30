@@ -2,7 +2,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('steal-tools');
     grunt.loadNpmTasks('grunt-bump');
-    grunt.loadNpmTasks('testee');
 
     grunt.initConfig({
         "steal-export": {

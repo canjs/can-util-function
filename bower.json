@@ -6,15 +6,16 @@
     "Bitovi"
   ],
   "description": "can/util/function plugin for canjs",
-  "main": "dist/amd/function.js",
+  "main": "dist/cjs/function.js",
+  "moduleType": "node",
   "keywords": [
     "can",
     "canjs",
     "can-plugin"
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "can": "^2.2.5"
+  "dependencies": {
+    "canjs": "^2.2.5"
   },
   "ignore": [
     "**/.*",
