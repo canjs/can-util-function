@@ -38,12 +38,6 @@
     "main": "function",
     "directories": {
       "lib": "src"
-    },
-    "map": {
-      "can/util/function/function": "can/util/function"
-    },
-    "paths": {
-      "can/util/function": "src/function.js"
     }
   }
 }
