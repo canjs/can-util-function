@@ -1,4 +1,4 @@
-/*can-util-function@0.0.2#function*/
+/*can-util-function@0.0.4#function*/
 'use strict';
 Object.defineProperties(module.exports, {
     default: {
@@ -8,9 +8,8 @@ Object.defineProperties(module.exports, {
     },
     __esModule: { value: true }
 });
-var $__can__, $__can_47_util_47_util__;
+var $__can__;
 var can = ($__can__ = require('can'), $__can__ && $__can__.__esModule && $__can__ || { default: $__can__ }).default;
-$__can_47_util_47_util__ = require('can/util/util'), $__can_47_util_47_util__ && $__can_47_util_47_util__.__esModule && $__can_47_util_47_util__ || { default: $__can_47_util_47_util__ };
 can.extend(can, {
     debounce: function (fn, ms, context) {
         var timeout;

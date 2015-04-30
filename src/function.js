@@ -1,5 +1,4 @@
 import can from 'can';
-import 'can/util/util';
 
 can.extend(can, {
     debounce: function(fn, ms, context) {

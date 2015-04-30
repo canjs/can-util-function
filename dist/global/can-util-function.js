@@ -60,18 +60,12 @@
 		orig: global.System
 	};
 })({},window)
-/*can-util-function@0.0.2#function*/
-define('can-util-function', [
-    'can',
-    'can/util/util'
-], function ($__0, $__2) {
+/*can-util-function@0.0.4#function*/
+define('can-util-function', ['can'], function ($__0) {
     'use strict';
     if (!$__0 || !$__0.__esModule)
         $__0 = { default: $__0 };
-    if (!$__2 || !$__2.__esModule)
-        $__2 = { default: $__2 };
     var can = $__0.default;
-    $__2;
     can.extend(can, {
         debounce: function (fn, ms, context) {
             var timeout;
@@ -84,8 +78,8 @@ define('can-util-function', [
             };
         },
         defer: function (fn, context) {
-            for (var args = [], $__3 = 2; $__3 < arguments.length; $__3++)
-                args[$__3 - 2] = arguments[$__3];
+            for (var args = [], $__2 = 2; $__2 < arguments.length; $__2++)
+                args[$__2 - 2] = arguments[$__2];
             var ctx = context || this;
             setTimeout(function () {
                 fn.apply(ctx, args);
