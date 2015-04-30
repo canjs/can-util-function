@@ -6,9 +6,9 @@ The can-util-function plugin adds some common functions onto the `can` framework
 
 ## API
 
-[can.debounce](#candebouncefn-ms-context)
-[can.defer](#candeferfn-context-args)
-[can.throttle](#canthrottlefn-ms-context)
+[can.debounce](#candebouncefn-ms-context)  
+[can.defer](#candeferfn-context-args)  
+[can.throttle](#canthrottlefn-ms-context)  
 
 ### can.debounce(fn, ms, [context])
 
