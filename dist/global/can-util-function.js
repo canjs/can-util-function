@@ -60,7 +60,7 @@
 		orig: global.System
 	};
 })({},window)
-/*can-util-function@0.0.1#function*/
+/*can-util-function@0.0.2#function*/
 define('can-util-function', [
     'can',
     'can/util/util'

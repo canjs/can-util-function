@@ -1,4 +1,4 @@
-/*can-util-function@0.0.1#function*/
+/*can-util-function@0.0.2#function*/
 define([
     'can',
     'can/util'
