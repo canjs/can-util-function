@@ -1,6 +1,6 @@
 {
   "name": "can-util-function",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "can/util/function plugin for canjs adds some common functions to the can namespace",
   "main": "dist/cjs/function.js",
   "scripts": {
