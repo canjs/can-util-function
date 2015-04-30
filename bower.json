@@ -6,7 +6,7 @@
     "Bitovi"
   ],
   "description": "can/util/function plugin for canjs",
-  "main": "dist/steal/function.js",
+  "main": "dist/amd/function.js",
   "keywords": [
     "can",
     "canjs",
@@ -19,8 +19,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "devDependencies": {
-    "grunt": "~0.4.5"
-  }
+  ]
 }

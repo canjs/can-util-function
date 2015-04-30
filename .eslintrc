@@ -27,6 +27,7 @@
   },
 
   "env": {
+    "es6": true,
     "browser": true,      // browser global variables.
     "node": true,         // Node.js global variables and Node.js-specific rules.
     "amd": true,          // defines require() and define() as global variables as per the amd spec.

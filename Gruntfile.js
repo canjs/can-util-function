@@ -1,38 +1,30 @@
 module.exports = function(grunt) {
 
+    grunt.loadNpmTasks('steal-tools');
+    grunt.loadNpmTasks('grunt-bump');
+    grunt.loadNpmTasks('testee');
+
     grunt.initConfig({
         "steal-export": {
-            transpile: {
+            modifier: {
                 system: {
-                    main: "src/function",
                     config: "package.json!npm"
                 },
-                options: {
-                    debug: true
-                },
                 outputs: {
-                    amd: {
-                        graphs: ["src/function"],
-                        format: "amd",
-                        ignore: ['can/util']
-                    },
-                    cjs: {
-                        graphs: ["src/function"],
-                        format: "cjs",
-                        ignore: ['can/util']
-                    },
-                    global: {
-                        graphs: ["src/function"],
-                        format: "global",
-                        ignore: ['can/util']
-                    }
+                    "+cjs": {},
+                    "+amd": {},
+                    "+global-js": {}
                 }
+            }
+        },
+        bump: {
+            options: {
+                files: ['package.json', 'bower.json'],
+                commitFiles: ['package.json', 'bower.json'],
+                prereleaseName: 'rc'
             }
         }
     });
-    grunt.loadNpmTasks('steal-tools');
 
-    // Default task(s).
-    grunt.registerTask('default', ['steal-export']);
-
+    grunt.registerTask('build', ['steal-export']);
 };
