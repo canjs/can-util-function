@@ -1,6 +1,6 @@
 import QUnit from 'steal-qunit';
 import can from 'can';
-import 'can/util/function';
+import 'can-util-function';
 
 QUnit.module('can.debounce');
 
