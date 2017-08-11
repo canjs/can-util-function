@@ -1,90 +1,28 @@
 # can-util-function
 
-_\*This plugin is experimental and not **official** or **supported**\*_
+[![Join the chat at https://gitter.im/canjs/canjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canjs/canjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-util-function/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/can-util-function.svg)](https://www.npmjs.com/package/can-util-function)
+[![Travis build status](https://travis-ci.org/canjs/can-util-function.svg?branch=master)](https://travis-ci.org/canjs/can-util-function)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-util-function?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-util-function)
+[![Coverage status](https://coveralls.io/repos/github/canjs/can-util-function/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-util-function?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-util-function.svg)](https://greenkeeper.io/)
 
 The can-util-function plugin adds some common functions onto the `can` framework object (sometimes called the can namespace);
 
-## API
+## Documentation
 
-[can.debounce](#candebouncefn-ms-context)  
-[can.defer](#candeferfn-context-args)  
-[can.throttle](#canthrottlefn-ms-context)  
+Read the [API docs on CanJS.com](https://canjs.com/doc/can-util-function.html).
 
-### can.debounce(fn, ms, [context])
+## Changelog
 
-Creates a function that will delay calling `fn` by a number of milliseconds `ms` since the last time `fn` was called.
+See the [latest releases on GitHub](https://github.com/canjs/can-util-function/releases).
 
-```javascript
-{
-    ".button click": can.debounce(function(el, ev){
-        submitChanges(el);
-    }, 200)
-}
-```
+## Contributing
 
-##### fn
-Type: `Function`
-A function to be delayed
+The [contribution guide](https://github.com/canjs/can-util-function/blob/master/CONTRIBUTING.md) has information on getting help, reporting bugs, developing locally, and more.
 
-##### ms
-Type: `Number`
-The number of milliseconds to delay before calling `fn` again
+## License
 
-##### context [optional]
-Type: `Object`
-The context (this) that `fn` will be called with
+[MIT](https://github.com/canjs/can-util-function/blob/master/LICENSE.md)
 
-
-### can.defer(fn, [context, ...args])
-
-Delays calling `fn` until the current stack has cleared *(like `setTimeout(fn, 0)`)*
-
-```javascript
-can.defer(function(text) {
-  console.log(text);
-}, this, 'deferred');
-```
-
-##### fn
-Type: `Function`
-A function to be delayed
-
-##### context [optional]
-Type: `Object`
-The context (this) that `fn` will be called with
-
-##### ...args [optional]
-Type: `any arguments`
-All extra arguments are passed into `fn` in order
-
-
-### can.throttle(fn, ms, [context])
-Creates a function that only gets invoked a max of *once* per the time passed in `ms`.
-
-```javascript
-{
-    "{window} scroll": can.throttle(function(el, ev){
-        updatePosition(el);
-    }, 200)
-}
-```
-
-##### fn
-Type: `Function`
-A function to be throttled
-
-##### ms
-Type: `Number`
-The number of milliseconds to wait before allowing `fn` to be called again
-
-##### context [optional]
-Type: `Object`
-The context (this) that `fn` will be called with
-
--------------------
-
-
-Licensing
----------
-
-  MIT - Please see the file called LICENSE.
