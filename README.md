@@ -1,5 +1,7 @@
 # can-util-function
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-util-function.svg)](https://greenkeeper.io/)
+
 _\*This plugin is experimental and not **official** or **supported**\*_
 
 The can-util-function plugin adds some common functions onto the `can` framework object (sometimes called the can namespace);
